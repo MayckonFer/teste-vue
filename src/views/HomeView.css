@@ -1,0 +1,100 @@
+.banner {
+  background: url("../assets/banner.jpeg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 35.2rem;
+
+  padding: 3.2rem;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.wrapper_text_banner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 1.6rem;
+}
+
+.wrapper_text_banner h1 {
+  font-size: 5.1rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 6.1rem;
+}
+
+.wrapper_text_banner p {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 2.5rem;
+}
+
+.wrapper_text_banner button[title="Ver Consoles"] {
+  background-color: var(--blue_200);
+
+  padding: 1.6rem;
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.container_section {
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+
+  margin: 6.4rem 0;
+
+  width: 100%;
+}
+
+.content_section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_section h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--gray_700);
+}
+
+.header_section button[title="Ver tudo"] {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--blue_200);
+}
+
+.wrapper_cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+
+@media (max-width: 576px) {
+  .wrapper_text_banner h1 {
+    font-size: 4rem;
+    line-height: 4.1rem;
+  }
+
+  .wrapper_text_banner p {
+    font-size: 2rem;
+  }
+
+  .wrapper_cards {
+    justify-content: center;
+  }
+}
